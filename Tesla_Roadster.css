@@ -1,0 +1,426 @@
+body {background-color: #333}
+.fa-2x {
+font-size: 3em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 65px;
+height: 46px;
+text-align: center;
+vertical-align: middle;
+font-size:0px;
+}
+
+.teslall {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.contenido{
+  padding-top: 7px;
+  border-color: black;
+  border-width: 10px;
+  border-style: double;
+}
+.contenido{
+  padding-top: 7px;
+  width: 600px;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.teslall {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+.teslall:hover {
+  background-color: #111;
+}
+
+.menu {
+margin: 40px 40;
+}
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+position: fixed;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position:fixed;
+top:0;
+bottom:0;
+height:5000;
+left:0;
+width:80px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stroke {
+text-align:center;
+color: #fff;
+font-family: impact;
+font-size: 40px;
+text-shadow: -3px -3px 3px black, 3px -3px 3px black, -3px 3px 3px black, 3px 3px 3px black;
+}
+#fondo{
+    width: 2000px;
+    height: 650px;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/tesla-roadster-25-cars-worth-waiting-for-305-1527124394.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#fondo h1{
+    color: white;
+    font-family: Algerian, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.main-menu>ul {
+margin:80px 20px;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:300px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:40px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:155px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav
+.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a 
+{
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+.textttr{
+  display: flex;
+  background: white;
+}
+.pad{
+  padding-right: 50px;
+  padding-left: 50px
+}
+.letra{
+  font-family: Arial;
+ font-size: xx-small;
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  min-height: 100PX;
+  background:#212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  background:;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px 15px;
+  box-shadow: 0px 20px 40px rgba(18, 34, 64, 0.1);
+  border-radius: 30px;
+  position: relative;
+}
+.navbar__item {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.navbar__item::before, .navbar__item:after {
+  content: "";
+  position: absolute;
+  width: 50PX;
+  height: 50PX;
+  background-color: currentColor;
+  border-radius: 50%;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.55s cubic-bezier(0.71, 0.03, 0.23, 0.95);
+}
+.navbar__item::after {
+  box-shadow: 0 7px 15px currentColor;
+}
+.navbar__item.-blue {
+  color: #06b8ff;
+}
+.navbar__item.-orange {
+  color: #f2704d;
+}
+.navbar__item.-navy-blue {
+  color: #405fff;
+}
+.navbar__item.-black {
+  color: #000000;
+}
+.navbar__item:hover::before, .navbar__item:hover::after {
+  transform: translateY(-58px) scale(1.1);
+}
+.navbar__item:hover::before {
+  opacity: 1;
+}
+.navbar__item:hover::after {
+  opacity: 0.4;
+}
+.navbar__item:hover .navbar__icon {
+  transform: translateY(-58px) scale(1.25);
+  color: #fff;
+  transition-delay: 0.1s, 0.1s;
+}
+.navbar__icon {
+  transition: all 0.5s cubic-bezier(0.71, 0.03, 0.23, 0.95);
+  transition-delay: 0.1s;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+.max{
+  border-top-left-radius: 2%;
+  border-radius: 2%;
+  margin-left: 150px;
+  margin-right: 70px;
+  margin-top: 0px;
+  width: 680;
+  height: 500px;
+  background-color: white;
+  padding-right: 100px;
+  padding-left: 100px;
+border:black;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color:black;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color:black;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: black;
+}
+
+input::placeholder, textarea::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: black;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: black;
+}
+
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: black;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: black;
+}
+
+input:hover:black:placeholder, textarea:hover::placeholder {
+  color: black;
+};
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: black;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 4.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.00em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: white;
+  border: solid 4px black;
+  border-bottom:4px black;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: white;
+  color: black;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.000em;
+  border: solid 4px black; 
+  border-bottom:4px black;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background:white;
+  color: white;
+}
+
+#submit {
+  width: 502px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.000em;
+  color: white;
+  outline:none;
+  cursor: pointer;
+  border: solid 4px black;
+  border-bottom:4px black;
+}
+#submit:hover {
+  color: white;
